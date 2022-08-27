@@ -1,6 +1,4 @@
 rw_dir_file(system_app, sysfs_dm)
-rw_dir_file(system_app, sysfs_fastcharge)
-rw_dir_file(system_app, sysfs_sync)
 rw_dir_file(system_app, sysfs_vibrator)
 rw_dir_file(system_app, vendor_proc_display)
 rw_dir_file(system_app, vendor_proc_wireless)
