@@ -1,0 +1,6 @@
+cc_library {
+    name: "libshims_ozoc2store",
+    srcs: ["OZOC2StoreShim.cpp"],
+    device_specific: true,
+}
+
