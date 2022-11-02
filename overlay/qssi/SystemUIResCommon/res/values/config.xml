@@ -17,4 +17,6 @@
         <item>focus_mode_first_time_setup:custom(com.google.android.apps.wellbeing/.focusmode.quicksettings.FocusModeTileService)</item>
     </string-array>
 
+    <integer name="config_udfpsVendorCode">0</integer>
+
 </resources>
