@@ -1,6 +1,9 @@
 # Alert Slider
 /(vendor|system/vendor)/bin/tri-state-key-calibrate    u:object_r:tri-state-key-calibrate_exec:s0
 
+# Audio Listening
+/sys/devices/platform/soc/soc:qcom,msm-audio-apr/soc:qcom,msm-audio-apr:qcom,q6core-audio/soc:qcom,msm-audio-apr:qcom,q6core-audio:sound/Listen\s[0-9]\sAudio\sService/wakeup      u:object_r:sysfs_wakeup:s0
+
 # Charging
 /sys/devices/virtual/oplus_chg/battery/voocchg_ing     u:object_r:vendor_sysfs_battery_supply:s0
 
