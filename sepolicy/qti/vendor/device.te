@@ -12,3 +12,6 @@ type vendor_tof_device, dev_type;
 
 # Ultrasound
 type ultrasound_device, dev_type;
+
+# Modem
+type efs_boot_device, dev_type;
