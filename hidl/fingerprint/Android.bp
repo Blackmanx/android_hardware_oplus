@@ -11,11 +11,13 @@ cc_binary {
     ],
     shared_libs: [
         "libbase",
+        "libbinder_ndk",
         "libhidlbase",
         "libutils",
         "android.hardware.biometrics.fingerprint@2.1",
         "android.hardware.biometrics.fingerprint@2.2",
         "android.hardware.biometrics.fingerprint@2.3",
+        "android.hardware.power-V1-ndk",
         "vendor.oplus.hardware.biometrics.fingerprint@2.1",
     ],
     header_libs: ["kernel_headers.oplus"],
