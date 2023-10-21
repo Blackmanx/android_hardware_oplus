@@ -1,1 +1,2 @@
 allow hal_wifi_default persist_vendor_debug_wifi_prop:file { read };
+allow hal_wifi_default self:capability { sys_module };
