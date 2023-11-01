@@ -1,4 +1,6 @@
 allow mediacodec hal_dms_hwservice:hwservice_manager find;
 allow mediacodec hal_dms_default:binder { call transfer };
+binder_call(mediacodec, hal_dms_default)
+
 set_prop(mediacodec, vendor_video_prop)
 get_prop(mediacodec, vendor_audio_prop)
