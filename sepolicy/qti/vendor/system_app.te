@@ -5,6 +5,7 @@ rw_dir_file(system_app, vendor_proc_wireless)
 rw_dir_file(system_app, vendor_sysfs_graphics)
 rw_dir_file(system_app, vendor_sysfs_kgsl)
 rw_dir_file(system_app, vendor_sysfs_msm_perf)
+rw_dir_file(system_app, vendor_sysfs_usb_supply)
 
 # Battery Health
 allow system_app vendor_sysfs_battery_supply:dir search;
