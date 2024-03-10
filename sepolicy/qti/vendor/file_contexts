@@ -40,7 +40,8 @@
 /(odm|vendor/odm)/bin/init\.oplus\.sh          u:object_r:vendor_qti_init_shell_exec:s0
 /(odm|vendor/odm)/bin/init\.oplus\.wifi\.sh    u:object_r:vendor_qti_init_shell_exec:s0
 /(odm|vendor/odm)/bin/sensor_recover\.sh       u:object_r:vendor_qti_init_shell_exec:s0
-
+/(odm|vendor/odm)/bin/init\.network\.minidump\.sh    u:object_r:vendor_qti_init_shell_exec:s0
+/(odm|vendor/odm)/bin/init\.network\.removedump\.sh    u:object_r:vendor_qti_init_shell_exec:s0
 # Light
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light-service\.oplus                                                 u:object_r:hal_light_default_exec:s0
 
@@ -53,7 +54,11 @@
 /dev/block/platform/soc/1d84000\.ufshc/by-name/mdm_oem_dycnvbk    u:object_r:vendor_modem_efs_partition_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/mdm_oem_stanvbk    u:object_r:vendor_modem_efs_partition_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/mdm1oemnvbktmp     u:object_r:vendor_modem_efs_partition_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/oplusstanvbk       u:object_r:vendor_modem_efs_partition_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/mdmddr             u:object_r:vendor_efs_boot_dev:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/mdm1m9kefs1        u:object_r:vendor_efs_boot_dev:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/mdm1m9kefs2        u:object_r:vendor_efs_boot_dev:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/mdm1m9kefs3        u:object_r:vendor_efs_boot_dev:s0
 
 # NFC
 /(odm|vendor/odm)/bin/hw/android\.hardware\.nfc@1\.2-service                u:object_r:hal_nfc_default_exec:s0

@@ -6,7 +6,7 @@ allow vendor_mdm_helper vendor_sysfs_soc_sensitive:file r_file_perms;
 allow vendor_mdm_helper vendor_mhi_device:chr_file rw_file_perms;
 
 #Needed by ks in order to access the efs sync partitions
-allow vendor_mdm_helper block_device:dir r_dir_perms;
+allow vendor_mdm_helper block_device:dir rw_dir_perms;
 allow vendor_mdm_helper efs_boot_device:blk_file r_file_perms;
 
 r_dir_file(vendor_mdm_helper, mnt_vendor_file)
@@ -18,4 +18,5 @@ allow vendor_mdm_helper vendor_radio_prop:file { read };
 get_prop(vendor_mdm_helper, vendor_radio_prop)
 set_prop(vendor_mdm_helper, vendor_modem_prop)
 allow vendor_mdm_helper tmpfs:dir { write };
-allow vendor_mdm_helper mnt_vendor_file:dir { write };
+allow vendor_mdm_helper mnt_vendor_file:dir { write add_name write };
+allow vendor_mdm_helper mnt_vendor_file:file { create write };
