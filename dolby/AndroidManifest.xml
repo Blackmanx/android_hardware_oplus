@@ -10,7 +10,8 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
-        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:allowBackup="false"
         android:label="@string/dolby_title"
         android:persistent="true">
 
@@ -36,10 +37,25 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.CATEGORY_CONTENT_MUSIC" />
             </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
             <meta-data android:name="com.android.settings.category"
                        android:value="com.android.settings.category.ia.sound" />
             <meta-data android:name="com.android.settings.summary_uri"
                        android:value="content://co.aospa.dolby.oplus.summary/dolby" />
+        </activity>
+
+        <activity
+            android:name=".geq.EqualizerActivity"
+            android:label="@string/dolby_preset"
+            android:theme="@style/Theme.SubSettingsBase"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
 
         <service

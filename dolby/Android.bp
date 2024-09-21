@@ -8,7 +8,7 @@
 android_app {
     name: "OplusDolby",
 
-    srcs: ["src/**/*.java"],
+    srcs: ["src/**/*.kt"],
     resource_dirs: ["res"],
     certificate: "platform",
     platform_apis: true,
@@ -18,6 +18,11 @@ android_app {
     overrides: ["MusicFX"],
     static_libs: [
         "SettingsLib",
+        "SpaLib",
+        "androidx.activity_activity-compose",
+        "androidx.compose.material3_material3",
+        "androidx.compose.runtime_runtime",
         "androidx.preference_preference",
+        "org.lineageos.settings.resources",
     ],
 }

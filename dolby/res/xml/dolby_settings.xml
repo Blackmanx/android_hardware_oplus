@@ -24,21 +24,33 @@
     <PreferenceCategory
         android:title="@string/dolby_category_settings">
 
-        <ListPreference
+        <Preference
             android:key="dolby_preset"
-            android:entries="@array/dolby_preset_entries"
-            android:entryValues="@array/dolby_preset_values"
-            android:title="@string/dolby_preset" />
+            android:title="@string/dolby_preset">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="co.aospa.dolby.oplus"
+                android:targetClass="co.aospa.dolby.oplus.geq.EqualizerActivity" />
+        </Preference>
+
+        <co.aospa.dolby.oplus.preference.DolbyIeqPreference
+            android:key="dolby_ieq"
+            android:entries="@array/dolby_ieq_entries"
+            android:entryValues="@array/dolby_ieq_values"
+            android:title="@string/dolby_ieq" />
+
+        <SwitchPreferenceCompat
+            android:key="dolby_spk_virtualizer"
+            android:title="@string/dolby_spk_virtualizer" />
 
         <SwitchPreferenceCompat
             android:key="dolby_virtualizer"
-            android:title="@string/dolby_virtualizer" />
+            android:title="@string/dolby_hp_virtualizer" />
 
         <ListPreference
             android:key="dolby_stereo"
             android:entries="@array/dolby_stereo_entries"
             android:entryValues="@array/dolby_stereo_values"
-            android:defaultValue="4"
             android:title="@string/dolby_stereo_widening"
             android:dependency="dolby_virtualizer" />
 
